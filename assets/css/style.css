@@ -1,3 +1,13 @@
 #add-animal {
-    color: blueviolet;
+    color: rgb(43, 220, 226);
+    font-family: 'Space Mono', monospace;
+}
+
+button.animals {
+    color: rgb(43, 220, 226);
+    font-family: 'Space Mono', monospace;
+}
+
+h1 {
+    font-family: 'Karla', sans-serif;
 }
