@@ -1,4 +1,4 @@
-    //Initial array of movies	
+    // array of animals
     $(document).ready(function() {
 
         var topics = ["Dog", "Cat", "Monkey", "Pig", "Sloth"];
@@ -18,10 +18,10 @@
         }
         renderButtons();
 
-        //on button click
+        // on button click
         $(document).on('click', '.animals', function() {
 
-            //new variable will log the text data from each button
+            // new variable will log the text from each button
             var animalGif = $(this).data('name');
             // console.log(animalGif);
 
@@ -49,7 +49,7 @@
                     $('#animals-view').prepend(gifImage);
                     gifImage.on('click', playGif);
 
-                    // Pulling ratings for each gif
+                    // ratings for each gif
                     var rating = results[j].rating;
                     // console.log(rating);
                     var displayRated = $('<p>').text("Rating: " + rating);
