@@ -1,7 +1,7 @@
     //Initial array of movies	
     $(document).ready(function() {
 
-        var topics = ["Dog", "Cat", "Monkey", "Bear", "Bunny"];
+        var topics = ["Dog Typing", "Cat Typing", "Monkey Typing", "Bear", "Bunny"];
 
         //  create topics array buttons
         function renderButtons() {
@@ -46,14 +46,14 @@
 
                     var gifImage = $('<img>').attr("src", still).attr('data-animate', imageView).attr('data-still', still);
                     gifImage.attr('data-state', 'still');
-                    $('#movies-view').prepend(gifImage);
+                    $('#animals-view').prepend(gifImage);
                     gifImage.on('click', playGif);
 
                     // Pulling ratings for each movie
                     var rating = results[j].rating;
                     // console.log(rating);
                     var displayRated = $('<p>').text("Rating: " + rating);
-                    $('#movies-view').prepend(displayRated);
+                    $('#animals-view').prepend(displayRated);
                 } // end for loop
 
             }); // done response
