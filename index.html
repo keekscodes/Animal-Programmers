@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Animal Programmers of Giphy</title>
+
+    <!-- reset css link -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- style.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container"><br>
+
+        <header class="jumbotron">
+            <h1>Animal Programmers</h1>
+        </header>
+
+
+        <!-- Rendered buttons will get dumped Here  -->
+        <div id="buttons-view"></div><br>
+
+        <!-- Submit movie form -->
+        <form class="navbar-form navbar-right" id="animal-form">
+            <div class="form-group">
+                <label for="animal-input"><h3>Add Animal Programmer</h3></label>
+            </div>
+            <input type="text" id="animal-input"><br>
+
+            <!-- Button triggers new movie to be added -->
+            <input id="add-animal" button type="submit" class="btn btn-default" value="Submit">
+        </form>
+
+        <!-- Gifs will get dumped dere -->
+        <div id="animals-view" data-state="still"></div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
+
+</body>
+
+</html>
