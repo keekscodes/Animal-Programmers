@@ -49,7 +49,7 @@
                     $('#animals-view').prepend(gifImage);
                     gifImage.on('click', playGif);
 
-                    // Pulling ratings for each movie
+                    // Pulling ratings for each gif
                     var rating = results[j].rating;
                     // console.log(rating);
                     var displayRated = $('<p>').text("Rating: " + rating);
