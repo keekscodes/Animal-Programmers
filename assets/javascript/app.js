@@ -1,7 +1,7 @@
     //Initial array of movies	
     $(document).ready(function() {
 
-        var topics = ["Dog Typing", "Cat Typing", "Monkey Typing", "Bear", "Bunny Typing"];
+        var topics = ["Dog", "Cat", "Monkey", "Pig", "Sloth"];
 
         //  create topics array buttons
         function renderButtons() {
@@ -22,10 +22,10 @@
         $(document).on('click', '.animals', function() {
 
             //new variable will log the text data from each button
-            var animalGif = $(this).html();
+            var animalGif = $(this).data('name');
             // console.log(animalGif);
 
-            var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animalGif + "&api_key=ynFTVfkAwz3tDpsyIcbVdgE1bI5lyqtd&limit=10";
+            var queryURL = "https://api.giphy.com/v1/gifs/search?q=talking-" + animalGif + "+at+work&api_key=ynFTVfkAwz3tDpsyIcbVdgE1bI5lyqtd&limit=10";
             // console.log(queryURL);
 
             // Creating an AJAX call for the specific animal button being clicked
@@ -54,9 +54,9 @@
                     // console.log(rating);
                     var displayRated = $('<p>').text("Rating: " + rating);
                     $('#animals-view').prepend(displayRated);
-                } // end for loop
-
-            }); // done response
+                }
+                console.log(response);
+            });
 
             //function to stop and animate gifs
             function playGif() {
@@ -70,7 +70,7 @@
                     $(this).attr('data-state', 'still');
                 }
 
-            } //end of on click function
+            }
 
         }); //end of document on click 
 
