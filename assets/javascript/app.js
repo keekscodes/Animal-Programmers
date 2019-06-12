@@ -1,7 +1,7 @@
     //Initial array of movies	
     $(document).ready(function() {
 
-        var topics = ["Dog Typing", "Cat Typing", "Monkey Typing", "Bear", "Bunny"];
+        var topics = ["Dog Typing", "Cat Typing", "Monkey Typing", "Bear", "Bunny Typing"];
 
         //  create topics array buttons
         function renderButtons() {
@@ -80,7 +80,7 @@
                 alert('Input can not be left blank');
             } else {
                 var animals = $('#animal-input').val().trim();
-                topics.push(movies);
+                topics.push(animals);
                 $('#animal-input').val('');
                 renderButtons();
                 return false;
