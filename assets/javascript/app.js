@@ -56,7 +56,7 @@
                     var rating = results[j].rating;
                     // console.log(rating);
                     var displayRated = $('<p>').text("Rating: " + rating);
-                    $('#animals-view').prepend(displayRated);
+                    $('#animals-view').append(displayRated);
                 }
                 console.log(response);
             });
