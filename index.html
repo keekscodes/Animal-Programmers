@@ -38,39 +38,22 @@
 
         <div class="row">
             <div class="col-md-12">
-                <form id="animal-form">
-                    <div class="row">
-                        <div class="col-md-2">
-                            <!-- <div class="form-group"> -->
+                <form class="form-inline" id="animal-form">
+                    <div class="row align-left">
+                        <div class="col">
                             <label for="animal-input"></label>
-                            <!-- </div> -->
-                            <input type="text" id="animal-input" placeholder="Add an animal"><br>
+                            <input type="text" id="animal-input" placeholder="Add an animal">
                         </div>
-
 
                         <!-- Button triggers new animals to be added -->
-                        <div class="col-md-4">
-                            <input id="add-animal" button type="submit" class="btn btn-outline-info" value="Submit">
+                        <input id="add-animal" button type="submit" class="btn btn-outline-info" value="Submit">
 
-                        </div>
                     </div>
                 </form>
-
             </div>
         </div>
-    </div>
-
-    </div>
-
-
-    <!-- Submit animal form -->
-
-
-    <br>
-
-    <!-- Gifs will go here -->
-    <div class="container" id="animals-view" data-state="still"></div>
-
+        <!-- Gifs will go here -->
+        <div id="animals-view" data-state="still"></div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
