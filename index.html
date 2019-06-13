@@ -32,26 +32,44 @@
 
 
         <!-- Rendered buttons will go here  -->
-        <div class="rainbow" id="buttons-view"></div><br>
+        <div class="row pb-4">
+            <div class="col-md-12 rainbow" id="buttons-view"></div>
+        </div>
 
-        <!-- Submit animal form -->
+        <div class="row">
+            <div class="col-md-12">
+                <form id="animal-form">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <!-- <div class="form-group"> -->
+                            <label for="animal-input"></label>
+                            <!-- </div> -->
+                            <input type="text" id="animal-input" placeholder="Add an animal"><br>
+                        </div>
 
-        <form id="animal-form">
-            <div class="form-group">
-                <label for="animal-input"></label>
+
+                        <!-- Button triggers new animals to be added -->
+                        <div class="col-md-4">
+                            <input id="add-animal" button type="submit" class="btn btn-outline-info" value="Submit">
+
+                        </div>
+                    </div>
+                </form>
+
             </div>
-            <input type="text" id="animal-input" placeholder="Add an animal"><br>
+        </div>
+    </div>
 
-            <br>
+    </div>
 
-            <!-- Button triggers new animals to be added -->
-            <input id="add-animal" button type="submit" class="btn btn-outline-info" value="Submit">
-        </form>
 
-        <br>
+    <!-- Submit animal form -->
 
-        <!-- Gifs will go here -->
-        <div id="animals-view" data-state="still"></div>
+
+    <br>
+
+    <!-- Gifs will go here -->
+    <div class="container" id="animals-view" data-state="still"></div>
 
     </div>
 
