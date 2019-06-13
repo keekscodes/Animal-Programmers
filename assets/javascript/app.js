@@ -39,10 +39,13 @@
                 //empties the div before adding more gifs
                 $('#animals-view').empty();
                 for (var j = 0; j < results.length; j++) {
-                    var imageDiv = $('<div>');
+
+                    // var imageView = results[j].images.original.url; // res.data[j].images.original.url
+                    // var still = results[j].images.original.url;
+
                     var imageView = results[j].images.fixed_height.url;
                     var still = results[j].images.fixed_height_still.url;
-                    // console.log(imageView);  
+                    console.log(imageView);
 
                     var gifImage = $('<img>').attr("src", still).attr('data-animate', imageView).attr('data-still', still);
                     gifImage.attr('data-state', 'still');
@@ -72,9 +75,9 @@
 
             }
 
-        }); //end of document on click 
+        });
 
-        //adding new button to array
+        // adding new button to array
         $(document).on('click', '#add-animal', function() {
             if ($('#animal-input').val().trim() == '') {
                 alert('Input can not be left blank');
