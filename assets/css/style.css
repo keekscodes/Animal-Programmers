@@ -8,28 +8,33 @@ body {
     background-color: white;
 }
 
+#buttons-view {
+    display: inline;
+}
+
 button.animals {
     /* font-family: 'Space Mono', monospace; */
     margin-right: 10px;
 }
 
-button.animals {
+
+/* button.animals {
     /* width: calc(20vw + 6px);
-    height: calc(8vw + 6px); */
+    height: calc(8vw + 6px); 
     background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-    /* font-size: 16px; */
+    /* font-size: 16px; 
     font-weight: bold;
 }
 
 button.animals:after {
     content: attr(alt);
     /* width: 20vw;
-    height: 8vw; */
+    height: 8vw;
     background-color: #191919;
     display: flex;
     align-items: center;
@@ -38,13 +43,13 @@ button.animals:after {
 
 button.animals:hover {
     animation: slidebg 2s linear infinite;
-}
+} */
 
 h1 {
     font-family: 'Montserrat';
 }
 
-
+.container
 /* img {
     height: 250px;
     width: 250px;
