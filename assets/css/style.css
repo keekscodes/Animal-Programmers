@@ -18,6 +18,21 @@ button.animals {
     margin-right: 10px;
 }
 
+img {
+    display: inline;
+    float: left;
+}
+
+#animals-view {
+    width: 100%;
+    list-style: none;
+    margin: 2em;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    order: 1;
+}
+
 
 /* button.animals {
     /* width: calc(20vw + 6px);
