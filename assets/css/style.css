@@ -8,9 +8,10 @@ body {
     background-color: white;
 }
 
-#buttons-view {
+
+/* #buttons-view {
     display: inline;
-}
+} */
 
 button.animals {
     /* font-family: 'Space Mono', monospace; */
