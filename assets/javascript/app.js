@@ -25,7 +25,7 @@
             var animalGif = $(this).data('name');
             // console.log(animalGif);
 
-            var queryURL = "https://api.giphy.com/v1/gifs/search?q=talking-" + animalGif + "+at+work&api_key=ynFTVfkAwz3tDpsyIcbVdgE1bI5lyqtd&limit=10";
+            var queryURL = "https://api.giphy.com/v1/gifs/search?q=talking-" + animalGif + "+at+work&api_key=ynFTVfkAwz3tDpsyIcbVdgE1bI5lyqtd&limit=12";
             // console.log(queryURL);
 
             // Creating an AJAX call for the specific animal button being clicked
