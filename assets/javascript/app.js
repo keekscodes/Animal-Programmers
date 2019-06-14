@@ -35,7 +35,7 @@
             }).done(function(response) {
 
                 var results = response.data;
-                //console.log(results);
+                console.log(results);
                 //empties the div before adding more gifs
                 $('#animals-view').empty();
                 for (var j = 0; j < results.length; j++) {
@@ -43,22 +43,34 @@
                     // var imageView = results[j].images.original.url; // res.data[j].images.original.url
                     // var still = results[j].images.original.url;
 
+                    // var imageView = results.images.original.url;
+
                     var imageView = results[j].images.fixed_height.url;
                     var still = results[j].images.fixed_height_still.url;
                     console.log(imageView);
 
-                    var gifImage = $('<img>').attr("src", still).attr('data-animate', imageView).attr('data-still', still);
+                    var animalDiv = $('<div>');
+
+                    var gifImage = $('<img>');
+                    gifImage.attr("src", still).attr('data-animate', imageView).attr('data-still', still);
                     gifImage.attr('data-state', 'still');
-                    $('#animals-view').prepend(gifImage);
+                    //$('#animals-view').prepend(gifImage);
                     gifImage.on('click', playGif);
 
                     // ratings for each gif
-                    var rating = results[j].rating;
+                    var rating = $('<p>').text("Rating: " + results[j].rating);
                     // console.log(rating);
-                    var displayRated = $('<p>').text("Rating: " + rating);
-                    $('#animals-view').append(displayRated);
+
+                    // var displayRated = $('<p>').text("Rating: " + rating);
+
+                    animalDiv.prepend(rating);
+                    animalDiv.prepend(gifImage);
+
+
+                    // $('#animals-view').prepend(displayRated);
+                    $("#animals-view").prepend(animalDiv);
                 }
-                console.log(response);
+                // console.log(response);
             });
 
             //function to stop and animate gifs
