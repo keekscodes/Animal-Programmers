@@ -5,7 +5,8 @@
  body {
      font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
      font-family: Arial, Helvetica, sans-serif;
-     background-color: white;
+     /* background-color: white; */
+     background-color: black;
  }
  
  #animal-input,
@@ -53,6 +54,7 @@
      border: 2px solid;
      padding: 0.5rem 1rem;
      border-image: conic-gradient(red, yellow, lime, aqua, blue, magenta, red) 1;
+     background-color: transparent;
  }
  
  button.animals:hover,
@@ -84,6 +86,12 @@
      display: grid;
      justify-content: space-evenly;
      justify-content: center;
+ }
+ 
+ div.container::after {
+     border: 2px solid;
+     padding: 0.5rem 1rem;
+     border-image: conic-gradient(red, yellow, lime, aqua, blue, magenta, red) 1;
  }
  
  #animals-view {
