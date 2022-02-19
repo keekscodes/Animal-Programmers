@@ -1,7 +1,7 @@
     // array of animals
     $(document).ready(function() {
 
-        var topics = ["Dog", "Cat", "Monkey", "Pig", "Sloth"];
+        var topics = ["Dog", "Cat", "Monkey", "Pig", "Sloth", "Cow"];
 
         //  create topics array buttons
         function renderButtons() {
